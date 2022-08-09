@@ -1,5 +1,5 @@
 {% set name = "acstools" %}
-{% set version = "3.3.1" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,23 +7,23 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 254b02018d9d5638235c2bdf930e4752a80435c674f258cd83eeea3fc1f4ed36
+  sha256: 6681667df9b9ee2c1facba67b8ad706b7ecd794a1666cce3a3cfe01979767246
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - acs_destripe = acstools.acs_destripe:main
     - acs_destripe_plus = acstools.acs_destripe_plus:main
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
     - astropy
     - beautifulsoup4
@@ -44,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.md
-  summary: 'Python Tools for HST ACS'
+  summary: Python Tools for HST ACS
   description: Python Tools for HST ACS (Advanced Camera for Surveys) Data
   doc_url: https://acstools.readthedocs.io/
   dev_url: https://github.com/spacetelescope/acstools
@@ -52,3 +52,5 @@ about:
 extra:
   recipe-maintainers:
     - pllim
+    - jryon
+    - rjavila
