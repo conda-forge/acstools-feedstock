@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@pllim](https://github.com/pllim/)
-
+* [@jryon](https://github.com/jryon/)
+* [@rjavila](https://github.com/rjavila/)
