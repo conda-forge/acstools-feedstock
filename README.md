@@ -149,6 +149,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@pllim](https://github.com/pllim/)
 * [@jryon](https://github.com/jryon/)
+* [@pllim](https://github.com/pllim/)
 * [@rjavila](https://github.com/rjavila/)
+
