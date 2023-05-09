@@ -1,5 +1,5 @@
 {% set name = "acstools" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2a17733191d1e55d4687796633c0584e21e759ff6149282fc9086f2596457103
+  sha256: e6ef766898e639a8464f058d54e97f28b44bd15a094d9f8f78f138d7ccb54ab5
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - pyyaml
     - scipy
     - scikit-image
+    - photutils
 
 test:
   imports:
