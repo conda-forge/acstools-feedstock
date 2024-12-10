@@ -10,7 +10,7 @@ source:
   sha256: 10838f992064f932800ead194cf83e3c2d3497d82a1282f3985c011332a7814d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - astropy
+    - astropy-base
     - beautifulsoup4
     - requests
     - pyyaml
