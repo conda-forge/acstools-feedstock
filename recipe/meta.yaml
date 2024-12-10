@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 10838f992064f932800ead194cf83e3c2d3497d82a1282f3985c011332a7814d
 
 build:
@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - astropy-base
     - beautifulsoup4
@@ -35,6 +35,8 @@ requirements:
     - photutils
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - acstools
   commands:
