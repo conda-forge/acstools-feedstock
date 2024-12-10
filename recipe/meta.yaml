@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }}
+    - python
     - numpy
     - astropy-base
     - beautifulsoup4
@@ -35,8 +35,6 @@ requirements:
     - photutils
 
 test:
-  requires:
-    - python {{ python_min }}
   imports:
     - acstools
   commands:
