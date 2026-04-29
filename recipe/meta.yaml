@@ -27,7 +27,6 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - astropy-base
-    - beautifulsoup4
     - requests
     - pyyaml
     - scipy
