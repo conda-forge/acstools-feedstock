@@ -1,5 +1,5 @@
 {% set name = "acstools" %}
-{% set version = "3.8.0" %}
+{% set version = "3.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ac735c6eff7b0a3f32edf6a8485bb081fbb34833e060451bf5157dad6bc7abc
+  sha256: 8bae89f2747693f2f58e792810290695d905c415fe8ce0a4df5c41a13e425fe0
 
 build:
   number: 0
